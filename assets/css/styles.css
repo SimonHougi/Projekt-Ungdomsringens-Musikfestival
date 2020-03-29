@@ -15,9 +15,52 @@ body {
 #navigation {
     width: 100vw;
     height: 10vh;
-    background-color: black;
 }
 
-i {
-    
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #1A1A1A;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: #EA5634;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 12vw;
+    text-decoration: none;
+  }
+
+.currentsite {
+    color: #13849E;
+}
+
+/* Styling for Facebook and Instagram and Arrow icons */
+
+i { 
+    color: #EA5634;
+}
+
+/* Styling for top part of the main page */
+
+#topmain {
+    margin: 0;
+    padding: 0;
+    background: url(images/landing.jpg);
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
 }
