@@ -1,7 +1,7 @@
 @charset "UTF-8";
-
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,55 +12,200 @@ body {
 
 /* Styling for navigation bar for all sites*/
 
-#navigation {
-    width: 100vw;
-    height: 10vh;
-}
-
 ul {
     margin: 0;
-    padding: 0;
+    padding: 1vh 1vw;
     list-style-type: none;
     overflow: hidden;
-    background-color: #1A1A1A;
 }
 
 li {
     float: left;
+    height: 8vh;
 }
 
 li a {
     color: #EA5634;
     display: block;
     text-align: center;
-    padding: 14px 16px;
-    margin-left: 12vw;
+    padding: 2vh 0.5vw;
+    margin-left: 8vw;
     text-decoration: none;
-  }
+    font-size: 1.7vw;
+    background-color: #1A1A1A;
+    width: 9vw;
+}
 
 .currentsite {
     color: #13849E;
 }
 
+#logo {
+    width: 4vw;
+    height: 8vh;
+}
+
 /* Styling for Facebook and Instagram and Arrow icons */
 
-i { 
+i {
     color: #EA5634;
 }
 
-/* Styling for top part of the main page */
+/* Styling for top part of the main part of the landing page */
 
-#topmain {
+h1 {
     margin: 0;
-    padding: 0;
+}
+
+p {
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+main {
     background: url(images/landing.jpg);
-    height: 100vh; 
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-h1 {
+#topmain {
+    color: #B73D3D;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#icondown {
+    margin-top: 10vh;
+}
+
+/* Styling for buttons */
+
+button {
+    width: 12vw;
+    padding: 2vh;
+    font-size: 2vw;
+    border: 2px solid #B73D3D;
+    background-color: black;
+    color: #B73D3D;
+}
+
+a {
+    text-decoration: none;
+    color: #B73D3D;
+}
+
+/* Styling for about us section on the landing page */
+
+#aboutus {
+    background-color: black;
     margin: 0;
     padding: 0;
+    color: white;
+    height: 100vh;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 2vw;
+}
+
+/*Styling for Gallery and Subscribe section on the landing page */
+
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 3vw;
+    color: #B73D3D;
+}
+
+.infobox {
+    width: 25vw;
+    height: 55vh;
+    padding: 2vh;
+    border: 2px solid #B73D3D;
+    background-color: black;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2vw;
+    color: #B73D3D;
+}
+
+article {
+    color: white;
+    margin-top: 2vh;
+    line-height: 1.5;
+}
+
+.leftsection {
+    grid-area: leftsect;
+    margin-left: 10vw;
+}
+
+.rightsection {
+    grid-area: rightsect;
+    margin-left: 15vw;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'leftsect rightsect';
+    margin-top: 10vh;
+}
+
+.subbtn {
+    position: relative;
+    bottom: 45vh;
+    left: 43.8vw;
+}
+
+.infobtn {
+    position: relative;
+    bottom: 25vh;
+    left: 31.5vw;
+}
+
+.partnersimg {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-bottom: 10vh;
+}
+
+/* Styling for the footer for all sites */
+
+footer {
+    background-color: black;
+    color: #B73D3D;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+footer > p {
+    display: inline-block;
+    padding-left: 11vw;
+}
+
+footer > .footericons {
+    display: inline-block;
+    padding-left: 11vw;
+}
+
+.footericons > i {
+    padding-left: 2.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
