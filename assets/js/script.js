@@ -2,8 +2,12 @@
 Github upload test <3
 */
 
-const WPurl = 'http://andhof17.dreamhosters.com/wp-json/wp/v2/posts'; // Andreas WP API URL
+const WPurl = 'http://andhof17.dreamhosters.com/wp-json/wp/v2/'; // Andreas WP API URL
 const WPkey = 'ZojeMhiQCU4ZzrmgoT4Bx8HkDlV2ABXM'; // Andreas WP API Nøgle
+
+
+let appOptions;
+const postInfoId = 5;
 
 getDataWP();
 
@@ -21,9 +25,15 @@ function getDataWP(){
            
         }
     }
-    xhttp.open('GET', `${WPurl}?api_key=${WPkey}`, true);
+    xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+    xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
+    
 }
+
+
+//  xhttp.open('GET', `${WPurl}?api_key=${WPkey}`, true);
+
 
 /* function renderWP(data){
     
@@ -37,3 +47,26 @@ function getDataWP(){
     
 `;
 } */
+
+/*
+function getInfoFromWP() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            // all good
+            try {
+                appOptions = JSON.parse(this.responseText);
+                heroImage.src = appOptions.acf.info_image;
+            } catch (error) {
+                errorMessage(`Error parsing JSON: ${error}`);
+            }
+        }
+        if (this.readyState == 4 && this.status > 400) {
+            errorMessage(`An Error has occured while getting the data.`);
+        }
+    }
+    xhttp.open('GET', `${WPurl}posts/${postInfoId}`, true);
+    xhttp.setRequestHeader('Authorization', `bearer ${WPKey}`);
+    xhttp.send();
+}
+ */
