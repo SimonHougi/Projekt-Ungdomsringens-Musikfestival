@@ -106,7 +106,7 @@ main, #info-main {
     width: 100%;
     
     font-size: 3vw;
-    margin-top: 18vh;
+    margin-top: 7vh;
     
     
 }
@@ -328,17 +328,46 @@ footer > .footericons {
 
 .subfomular {
     margin: 0;
-    width: 35vw;
-    height: 70vh;
+    width: 25vw;
+    height: 73vh;
     border: 1px solid black;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .poster {
-    height: 70vh;
     display: inline-block;
+    padding-left: 10vw;
 }
 
 .poster, img {
-    height: 70vh;
+    height: 73vh;
+}
+
+.subcontent {
+    display: flex;
+    margin-left: 15vw;
+    margin-bottom: 2.3vh;
+    margin-top: 2vh;
+}
+
+input {
+    width: 15vw;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+}
+
+label {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.subformular, h2 {
+    padding-top: 2vh;
+    font-size: 1.5vw;
+}
+
+.subfomular, button {
+    margin-left: 6.7vw;
 }
