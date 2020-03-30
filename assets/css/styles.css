@@ -72,7 +72,7 @@ main, #index-main{
 }
 
 main, #program-main{
-    background: url(images/audience.jpg); /* Thibault Trillet - pexels.com*/
+    background: url(images/programbackground.jpg); /* Thibault Trillet - pexels.com*/
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ main, #program-main{
 }
 
 main, #info-main {
-    background: url(images/infobackground.png);
+    background: url(images/infobackground.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,4 +231,65 @@ footer > .footericons {
     padding-left: 2.5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
+}
+
+/* Styling for footer on information page */
+
+.infofooter {
+    margin-top: 14vh;
+}
+
+/* Styling for footer on program page */
+
+.programfooter {
+    margin-top: 40vh;
+}
+
+/*Styling for the content on information page */
+
+.informationarticle {
+    width: 20vw;
+    height: 40vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.informationarticle, article {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.informationimg {
+    width: 20vw;
+    height: 20vh;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.informationimg, img {
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    grid-area: left;
+}
+
+.mid {
+    grid-area: mid;
+}
+
+.right {
+    grid-area: right;
+}
+
+.infocontainer {
+    display: grid;
+    grid-template-areas: 
+    'left left left mid mid mid right right right';
+    margin-left: 11vw;
+    margin-top: 5vh;
 }
