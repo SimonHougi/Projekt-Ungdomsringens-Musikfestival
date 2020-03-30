@@ -72,7 +72,7 @@ main, #index-main{
 }
 
 main, #program-main{
-    background: url(images/audience.jpg); /* Thibault Trillet - pexels.com*/
+    background: url(images/audienceblue.jpg); /* Thibault Trillet - pexels.com*/
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,7 +95,24 @@ main, #program-main{
 /* Program section */
 
 #program-section #top-main #program-section {
-    display: block;
+    display: flex;
+}
+
+#program-section #top-main #program-section > .program-gridbox {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#program-section #top-main #program-section .program-gridbox .program-gridbox-up {
+    background-color: blueviolet;
+    height: 100px;
+}
+
+#program-section #top-main #program-section .program-gridbox .program-gridbox-down {
+    background-color: red;
+    height: 500px;
 }
 
 /* Styling for buttons */
