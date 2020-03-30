@@ -263,12 +263,6 @@ footer > .footericons {
     padding-bottom: 2vh;
 }
 
-/* Styling for footer on information page */
-
-.infofooter {
-    margin-top: 14vh;
-}
-
 /* Styling for footer on program page */
 
 .programfooter {
@@ -321,5 +315,11 @@ footer > .footericons {
     grid-template-areas: 
     'left left left mid mid mid right right right';
     margin-left: 11vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
+}
+
+.infobutton {
+    margin-left: 44vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
 }
