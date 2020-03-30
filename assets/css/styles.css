@@ -62,8 +62,8 @@ p {
     margin-top: 2vh;
     font-weight: bold;
 }
-
-main, #index-main {
+/* unikt ID for hver main på de forskellige html sider */
+main, #index-main{
     background: url(images/landing.jpg);
     height: 100vh;
     background-position: center;
@@ -71,12 +71,13 @@ main, #index-main {
     background-size: cover;
 }
 
-main, #program-main {
-    background: url(images/audience.jpg);
+main, #program-main{
+    background: url(images/audience.jpg); /* Thibault Trillet - pexels.com*/
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 main, #info-main {
@@ -96,6 +97,12 @@ main, #info-main {
 
 #icondown {
     margin-top: 5vh;
+}
+
+/* Program section */
+
+#program-section #top-main #program-section {
+    display: block;
 }
 
 /* Styling for buttons */
