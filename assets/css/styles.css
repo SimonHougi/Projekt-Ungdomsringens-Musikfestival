@@ -63,8 +63,16 @@ p {
     font-weight: bold;
 }
 
-main {
+main, #index-main{
     background: url(images/landing.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main, #program-main{
+    background: url(images/audience.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
