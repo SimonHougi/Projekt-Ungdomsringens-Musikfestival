@@ -326,3 +326,19 @@ footer > .footericons {
 
 /*Styling for the content on subscriptment page */
 
+.subfomular {
+    margin: 0;
+    width: 35vw;
+    height: 70vh;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.poster {
+    height: 70vh;
+    display: inline-block;
+}
+
+.poster, img {
+    height: 70vh;
+}
