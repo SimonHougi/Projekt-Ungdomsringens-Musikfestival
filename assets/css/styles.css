@@ -63,7 +63,7 @@ p {
     font-weight: bold;
 }
 
-main, #index-main{
+main, #index-main {
     background: url(images/landing.jpg);
     height: 100vh;
     background-position: center;
@@ -71,7 +71,7 @@ main, #index-main{
     background-size: cover;
 }
 
-main, #program-main{
+main, #program-main {
     background: url(images/audience.jpg);
     height: 100vh;
     background-position: center;
@@ -79,6 +79,13 @@ main, #program-main{
     background-size: cover;
 }
 
+main, #info-main {
+    background: url(images/infobackground.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #topmain {
     color: white;
     width: 100%;
