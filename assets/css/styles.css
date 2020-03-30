@@ -279,7 +279,7 @@ footer > .footericons {
     padding: 0;
 }
 
-.informationarticle, article {
+.informationarticle article {
     margin: 0;
     padding: 0;
     color: black;
@@ -293,7 +293,7 @@ footer > .footericons {
     padding: 0;
 }
 
-.informationimg, img {
+.informationimg img {
     margin: 0;
     padding: 0;
 }
@@ -340,13 +340,13 @@ footer > .footericons {
     padding-left: 10vw;
 }
 
-.poster, img {
+.poster img {
     height: 73vh;
 }
 
 .subcontent {
     display: flex;
-    margin-left: 15vw;
+    margin-left: 20.5vw;
     margin-bottom: 2.3vh;
     margin-top: 2vh;
 }
@@ -363,11 +363,11 @@ label {
     text-align: center;
 }
 
-.subformular, h2 {
+.subcontent h2 {
     padding-top: 2vh;
     font-size: 1.5vw;
 }
 
-.subfomular, button {
+.subcontent button {
     margin-left: 6.7vw;
 }
