@@ -104,31 +104,35 @@ main, #info-main {
 #program-main #program-section {
     color: white;
     width: 100%;
-    padding: 0 100px;
+    
     font-size: 3vw;
-    text-align: center;
     margin-top: 18vh;
-    display: flex;
+    
+    
 }
 
 #program-main #program-section .program-flex {
-    margin: 10px;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#program-main #program-section .program-flex > .flex-box {
+    background-color: #f1f1f1;
+    margin: 0 0 0 5vw;
+
+    
     font-size: 30px;
+    
+}
+#program-main #program-section .program-flex .flex-box .filter {
+    height: 600px;
+    width: 30vw;
+    
 }
 
-#program-main #program-section .program-flex .program-filter {
-    background-color: red;
-    width: 40%;
-    padding: 20px;
-    font-size: 20px;
-}
-
-#program-main #program-section .program-flex .program-tabel {
-    background-color: blue;
-    width: 40%;
-    padding: 20px;
-    font-size: 20px;
+#program-main #program-section .program-flex .flex-box .table {
+    width: 55vw;
 }
 
 /* Styling for buttons */
