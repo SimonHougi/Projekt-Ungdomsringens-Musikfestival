@@ -2,7 +2,7 @@
 Github upload test <3
 */
 
-const WPurl = 'http://andhof17.dreamhosters.com/wp-json/wp/v2/'; // Andreas WP API URL
+const WPurl = 'http://andhof17.dreamhosters.com/wp-json/wp/v2/posts'; // Andreas WP API URL
 const WPkey = 'ZojeMhiQCU4ZzrmgoT4Bx8HkDlV2ABXM'; // Andreas WP API Nøgle
 
 getDataWP();
@@ -13,10 +13,10 @@ function getDataWP(){
         if (this.readyState == 4 && this.status == 200){
             const data = JSON.parse(this.responseText);
              console.log(data);
-            // console.log(data.url);
+                console.log(data.url);
           //  console.log(data.date);
            // console.log(data.explanation);
-            renderWP(data); // fører koden videre til en function ved navn renderWP
+           // renderWP(data); // fører koden videre til en function ved navn renderWP
             
            
         }
