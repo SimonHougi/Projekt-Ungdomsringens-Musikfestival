@@ -126,7 +126,7 @@ main, #info-main {
     
 }
 #program-main #program-section .program-flex .flex-box .filter {
-    height: 600px;
+    height: 65vh;
     width: 30vw;
     
 }
@@ -266,7 +266,7 @@ footer > .footericons {
 /* Styling for footer on program page */
 
 .programfooter {
-    margin-top: 40vh;
+    margin-top: 5vh;
 }
 
 /*Styling for the content on information page */
