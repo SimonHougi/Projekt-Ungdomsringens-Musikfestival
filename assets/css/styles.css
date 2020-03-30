@@ -286,6 +286,7 @@ footer > .footericons {
 }
 
 .informationimg {
+    
     width: 20vw;
     height: 20vh;
     background-color: black;
@@ -296,6 +297,8 @@ footer > .footericons {
 .informationimg, img {
     margin: 0;
     padding: 0;
+    max-width: 20vw; /* for at billedet ikke strækker sig for langt ud */
+    max-height: 20vh;
 }
 
 .left {
