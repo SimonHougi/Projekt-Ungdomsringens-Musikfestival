@@ -167,7 +167,7 @@ a {
     margin: 0;
     padding: 0;
     color: white;
-    height: 100vh;
+    height: 80vh;
 }
 
 h2 {
@@ -178,6 +178,27 @@ h2 {
     font-size: 2vw;
 }
 
+#aboutus p {
+    line-height: 1.5;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    font-size: 1.2vw;
+}
+
+.aboutleft {
+    grid-area: left;
+}
+
+.aboutright {
+    grid-area: right;
+}
+
+#JScontent {
+    display: grid;
+    grid-template-areas: 'left right';
+}
+
 /*Styling for Gallery and Subscribe section on the landing page */
 
 /* Gallery flex grid start */
@@ -186,6 +207,16 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#gallery {
+    background-color: #B73D3D;
+    padding-bottom: 2vh;
+}
+
+#gallery h3 {
+    color: black;
+    margin-bottom: 5vh;
 }
 
 .gallery-img-box {
@@ -297,6 +328,10 @@ footer>.footericons {
     padding-left: 2.5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
+}
+
+footer section, p, i {
+    margin-left: 1vw;
 }
 
 /*Styling for the content on information page */
@@ -456,12 +491,14 @@ label {
     #aboutus h2 {
         font-size: 6vw;
         padding: 5vh 0 0 0;
+        line-height: 1.5;
     }
-    #aboutus p {
-        line-height: 3.5vh;
-        font-weight: normal;
-        margin-left: 2vw;
+
+    #aboutus {
+        height: 30vh;
     }
+
+    
     /* Gallery and subscribe */
     #galleryandsubscribe h3 {
         font-size: 9vw;
@@ -531,45 +568,35 @@ label {
         background: black;
     }
     /* Styling for Program page */
-
     #program-main #program-section .program-flex {
         display: flex;
         flex-direction: column;
     }
-
     /* Styling for Subscribe page */
-
     .subcontent {
         display: table;
         margin: 0;
     }
-
     .subfomular {
         display: table-header-group;
     }
-
     .poster {
         display: table-footer-group;
     }
-
     .poster img {
         width: 100vw;
     }
-
     input {
         width: 90vw;
         margin: 2vh 0 2vh 4vw;
     }
-    
     label {
         margin-left: 4vw;
     }
-
     .subcontent h2 {
         padding-top: 2vh;
         font-size: 7vw;
     }
-    
     .subcontent button {
         width: 40vw;
         font-size: 5vw;

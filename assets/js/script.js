@@ -148,8 +148,8 @@ document.querySelector('#aboutus').innerHTML = `
     
         <h2>${data.acf.section_1_header}</h2>
         <div id="JScontent">
-            <section><p>${data.acf.section_1_text_area_1}<P></section>
-            <aside><p>${data.acf.section_1_text_area_2}<P></aside>
+            <section class="aboutleft hidden"><p>${data.acf.section_1_text_area_1}<P></section>
+            <aside class="aboutright hidden"><p>${data.acf.section_1_text_area_2}<P></aside>
         </div>
 `;
 document.querySelector('.tilmelding-container').innerHTML = `
@@ -174,22 +174,22 @@ function renderGalleryWP(data){
     <div class="flex-gallery">
         <div class="gallery-img-box"><img src="${data.acf.img_1.url}" alt="billede"></div>
         <div class="gallery-img-box"><img src="${data.acf.img_2.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_3.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_4.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_5.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_6.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_7.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_8.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_9.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_10.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_11.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_12.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_13.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_14.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_15.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_3.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_4.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_5.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_6.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_7.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_8.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_9.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_10.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_11.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_12.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_13.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_14.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_15.url}" alt="billede"></div>
         <div class="gallery-img-box"><img src="${data.acf.img_16.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_17.url}" alt="billede"></div>
-        <div class="gallery-img-box"><img src="${data.acf.img_18.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_17.url}" alt="billede"></div>
+        <div class="gallery-img-box hidden"><img src="${data.acf.img_18.url}" alt="billede"></div>
     </div>
 `;
 }
