@@ -371,8 +371,104 @@ label {
 /* Here starts the styling for mobile version of the website */
 
 @media only screen and (max-width: 768px) {
-    /* Styling for landing page*/
-    li {
+
+    /* Styling for navigation bar*/
+    
+    ul {
+        margin: 0;
+        padding: 0;
         background-color: black;
+    }
+
+    li a {
+        background-color: black;
+        border-radius: 0;
+        font-size: 5vw;
+        padding: 2vh 0 0 0;
+        margin: 0;
+        width: 28vw;
+    }
+
+    #logo {
+        width: 13vw;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /* Styling for footer */
+
+    footer {
+        font-size: 4vw;
+    }
+
+    .fa-3x {
+        margin-right: 5vw;
+        padding-right: 0;
+    }
+
+    footer p {
+        padding: 0;
+    }
+
+
+    /* Styling for Landing page */
+
+    /* Top main */
+
+    #topmain h1 {
+        font-size: 8vw;
+    }
+
+    #topmain p {
+        font-size: 6vw;
+    }
+
+    #topmain button {
+        width: 30vw;
+        height: 10vh;
+        font-size: 5vw;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    #icondown {
+        font-size: 6vw;
+    }
+
+    /* About us */
+
+    /* Gallery and subscribe */
+
+    #galleryandsubscribe h3 {
+        font-size: 9vw;
+    }
+
+    .container {
+        display: unset;
+    }
+
+    .infobox {
+        width: 80vw;
+        height: 60vh;
+        margin: 5vh 0 0 5vw;
+    }
+
+    .infobox h4 {
+        font-size: 6vw;
+    }
+
+    .subbtn, .infobtn {
+        position: inherit;
+        width: 40vw;
+        height: 15vh;
+        margin: 5vh 0 0 5vw;
+        font-size: 7vw;
+    }
+
+    .partnersimg {
+        width: 100vw;
+        margin: 5vh 0 5vh 0;
     }
 }
