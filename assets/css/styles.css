@@ -173,12 +173,13 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: DodgerBlue;
+    background-color: grey;
   }
   
   .gallery-img-box {
     background-color: #f1f1f1;
-    width: 100px;
+    width: 270px;
+    height: 270px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
@@ -186,8 +187,8 @@ h2 {
   }
 
   .gallery-img-box img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 270px;
+    max-height: 270px;
   }
 
 /* Gallery flex grid slut */
