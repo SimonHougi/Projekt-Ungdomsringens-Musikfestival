@@ -150,7 +150,6 @@ document.querySelector('.tilmelding-container').innerHTML = `
 
 function renderGalleryWP(data){ 
     document.querySelector('#JSgalleri').innerHTML = `
-
     <div class="flex-gallery">
         <div class="gallery-img-box"><img src="${data.acf.img_1.url}" alt="billede"></div>
         <div class="gallery-img-box"><img src="${data.acf.img_2.url}" alt="billede"></div>
