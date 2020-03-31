@@ -109,19 +109,32 @@ function renderForsideWP(data){ // billede
 
 `;
 document.querySelector('#aboutus').innerHTML = `
-    <div id="aboutus">
-        <h2>Ungdomsringen Præsenterer <br> - i samarbejde med NORDKRAFT <br> Undgomsringens Musikfestival 2020</h2>
+    
+        <h2>${data.acf.section_1_header}</h2>
         <div id="JScontent">
-            <section></section>
-            <aside></aside>
+            <section><p>${data.acf.section_1_text_area_1}<P></section>
+            <aside><p>${data.acf.section_1_text_area_2}<P></aside>
         </div>
-        <div id="JScontent">
-            <section></section>
-            <aside></aside>
-        </div>
-    </div>
-
 `;
-
+document.querySelector('.tilmelding-container').innerHTML = `
+<section class="infobox leftsection">
+    <h4>${data.acf.generel_header}</h4>
+    <article>${data.acf.generel_text_area}</article>
+    </section>
+    <section>
+    <button class="subbtn"><a href="tilmelding.html">Tilmeld</a></button>
+    <button class="infobtn"><a href="info.html">Mere info</a></button>
+    </section>
+    <section class="infobox rightsection">
+    <h4>Regler</h4>
+    <article>ØL/VIN/SPIRITUS OG STOFFER</br>
+        Det skal understreges, at al medbringen og indtagelse af øl/vin/spiritus/hash m.m. er
+        forbudt. Det gælder både i og udenfor Nord-kraft. Det er deltagende og medarbejderes ansvar, at
+        de deltagende unge overholder dette forbud. Indtagelse af ovennævnte ting vil medføre, at
+        klubben bliver bortvist fra festivalen.</br>
+        Musikfestivalen er et alkohol-, stof- og røgfrit arrangement.</br>
+        Har I spørgsmål, så kontakt konsulent Søren Elmkær på sel@ungdomsringen.dk.</article>
+</section>
+`;
 }
 
