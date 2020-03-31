@@ -12,6 +12,7 @@ const postInfoId = 5;
 const InfoPost = 58;
 const tablePost = 69;
 const ForsidePost1 = 90;
+const galleryPost = 100;
 
 // parameter test neden for
 randompost = 58;
@@ -19,6 +20,7 @@ var TPtest = randompost;
 
 getDatPInfo(); //parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
 getDataForside();
+getDataGallery();
 
 function getDatPInfo(){
     const xhttp = new XMLHttpRequest();
@@ -26,13 +28,11 @@ function getDatPInfo(){
         if (this.readyState == 4 && this.status == 200){
             const data = JSON.parse(this.responseText);
             console.log(data);
-            
-                
+
           // console.log(data.date);
            // console.log(data.explanation);
             // fører koden videre til en function ved navn renderInfoWP
             renderInfoWP(data);
-           
         }
     }
     // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
@@ -53,6 +53,22 @@ function getDataForside(){
     }
     // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
     xhttp.open('GET', `${WPurl}posts/${ForsidePost1}`, true); // parameter skal være her! efter "posts/"
+    xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
+    xhttp.send();
+}
+
+function getDataGallery(){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+    
+            renderGalleryWP(data);
+        }
+    }
+    // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+    xhttp.open('GET', `${WPurl}posts/${galleryPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
 }
@@ -129,6 +145,12 @@ document.querySelector('.tilmelding-container').innerHTML = `
     <h4>${data.acf.regler_header}</h4>
     <article>${data.acf.regler_text_area}</article>
 </section>
+`;
+}
+
+function renderGalleryWP(data){ 
+    document.querySelector('#').innerHTML = `
+
 `;
 }
 
