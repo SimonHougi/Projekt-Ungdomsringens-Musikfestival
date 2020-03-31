@@ -100,9 +100,9 @@ function renderInfoWP(data){ // billede
     document.querySelector('.info-gen').innerHTML = `
                         <div class="infocontainer">
                         <div class="left">
-                            <section class="informationimg">
+                            
                                 <img src="${data.acf.info_image_left.url}" alt="">
-                            </section>
+                            
                             <section class="informationarticle">
                                 <article><h1>${data.acf.info_header_left}</h1>
                                 <p>${data.acf.info_text_left}</p>
@@ -114,14 +114,14 @@ function renderInfoWP(data){ // billede
                                 <article><h1>${data.acf.info_header_mid}</h1>
                                 <p>${data.acf.info_text_mid}</p></article>
                             </section>
-                            <section class="informationimg">
+                            
                                 <img src="${data.acf.info_image_mid.url}" alt="">
-                            </section>
+                            
                         </div>
                         <div class="right">
-                            <section class="informationimg">
+                            
                                 <img src="${data.acf.info_image_right.url}" alt="">
-                            </section>
+                            
                             <section class="informationarticle">
                                 <article><h1>${data.acf.info_header_right}</h1>
                                 <p>${data.acf.info_text_right}</p></article>
