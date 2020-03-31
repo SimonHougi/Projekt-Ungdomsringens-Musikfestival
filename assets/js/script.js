@@ -10,16 +10,17 @@ let appOptions;
 const postInfoId = 5;
 
 const InfoPost = 58;
-const midPost = 69;
-const rightPost = 99;
+const tablePost = 69;
+const ForsidePost1 = 90;
 
 // parameter test neden for
 randompost = 58;
 var TPtest = randompost;
 
-getDataWP(); //parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
+getDatPInfo(); //parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
+getDataForside();
 
-function getDataWP(){
+function getDatPInfo(){
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200){
@@ -38,8 +39,24 @@ function getDataWP(){
     xhttp.open('GET', `${WPurl}posts/${InfoPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
-    
 }
+
+function getDataForside(){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+    
+            renderForsideWP(data);
+        }
+    }
+    // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+    xhttp.open('GET', `${WPurl}posts/${ForsidePost1}`, true); // parameter skal være her! efter "posts/"
+    xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
+    xhttp.send();
+}
+
 
 
 //  xhttp.open('GET', `${WPurl}?api_key=${WPkey}`, true);
@@ -75,32 +92,36 @@ function renderInfoWP(data){ // billede
                             </section>
                         </div>
                     </div>
-    
 `;
 
 }
 
+function renderForsideWP(data){ // billede
+    document.querySelector('#topmain').innerHTML = `
+    <section>
+        <h1>${data.acf.hero_header}</h1>
+        <p>${data.acf.hero_date}</p>
+        <button><a href="#tilmelding">Tilmelding</a></button>
+    </section>
+    <section id="icondown">
+        <i class="fa fa-arrow-down fa-3x"></i>
+    </section>
 
+`;
+document.querySelector('#aboutus').innerHTML = `
+    <div id="aboutus">
+        <h2>Ungdomsringen Præsenterer <br> - i samarbejde med NORDKRAFT <br> Undgomsringens Musikfestival 2020</h2>
+        <div id="JScontent">
+            <section></section>
+            <aside></aside>
+        </div>
+        <div id="JScontent">
+            <section></section>
+            <aside></aside>
+        </div>
+    </div>
 
-/*
-function getInfoFromWP() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            // all good
-            try {
-                appOptions = JSON.parse(this.responseText);
-                heroImage.src = appOptions.acf.info_image;
-            } catch (error) {
-                errorMessage(`Error parsing JSON: ${error}`);
-            }
-        }
-        if (this.readyState == 4 && this.status > 400) {
-            errorMessage(`An Error has occured while getting the data.`);
-        }
-    }
-    xhttp.open('GET', `${WPurl}posts/${postInfoId}`, true);
-    xhttp.setRequestHeader('Authorization', `bearer ${WPKey}`);
-    xhttp.send();
+`;
+
 }
- */
+
