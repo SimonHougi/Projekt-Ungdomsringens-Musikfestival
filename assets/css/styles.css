@@ -166,6 +166,32 @@ h2 {
 
 /*Styling for Gallery and Subscribe section on the landing page */
 
+
+/* Gallery flex grid start */
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: DodgerBlue;
+  }
+  
+  .gallery-img-box {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .gallery-img-box img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+/* Gallery flex grid slut */
+
 h3 {
     margin: 0;
     padding: 0;

@@ -12,7 +12,7 @@ const postInfoId = 5;
 const InfoPost = 58;
 const tablePost = 69;
 const ForsidePost1 = 90;
-const galleryPost = 100;
+const galleryPost = 129;
 
 // parameter test neden for
 randompost = 58;
