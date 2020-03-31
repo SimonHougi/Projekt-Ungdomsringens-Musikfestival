@@ -129,7 +129,7 @@ function renderInfoWP(data){ // billede
                         </div>
                     </div>
 `;
-
+setSpinner(false);
 }
 
 function renderForsideWP(data){ // billede
