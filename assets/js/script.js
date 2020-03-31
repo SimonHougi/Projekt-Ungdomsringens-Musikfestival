@@ -14,13 +14,31 @@ const tablePost = 69;
 const ForsidePost1 = 90;
 const galleryPost = 129;
 
-// parameter test neden for
-randompost = 58;
-var TPtest = randompost;
+const spinner = document.querySelector('#spinner') // henter Spinner fra html
+loadPage();
 
-getDatPInfo(); //parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
-getDataForside();
-getDataGallery();
+function setSpinner(isActive) {
+    if (isActive) {
+        spinner.classList.add('active');
+    } else {
+        spinner.classList.remove('active');
+    }
+}
+
+function loadPage() {
+    // turn on the spinner
+    setSpinner(true);
+
+   
+   
+    getDataForside(); // henter Forside SIDE DATA fra API (Wordpress)
+    getDataGallery(); // henter Galleri DATA
+    getDatPInfo(); // henter INFO SIDE DATA
+     // Note: parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
+}
+
+
+
 
 function getDatPInfo(){
     const xhttp = new XMLHttpRequest();
@@ -39,6 +57,8 @@ function getDatPInfo(){
     xhttp.open('GET', `${WPurl}posts/${InfoPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
+
+    
 }
 
 function getDataForside(){
@@ -146,6 +166,7 @@ document.querySelector('.tilmelding-container').innerHTML = `
     <article>${data.acf.regler_text_area}</article>
 </section>
 `;
+setSpinner(false);
 }
 
 function renderGalleryWP(data){ 
