@@ -10,6 +10,20 @@ body {
     padding: 0;
 }
 
+#spinner{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.active{
+    display: block !important;
+}
+
 /* Styling for navigation bar for all sites*/
 
 ul {
@@ -173,7 +187,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: grey;
+    
   }
   
   .gallery-img-box {
