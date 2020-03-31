@@ -279,20 +279,10 @@ footer>.footericons {
     color: black;
 }
 
-.informationimg {
+.infocontainer img {
+    margin: 0;
+    padding: 0;
     width: 20vw;
-    height: 20vh;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.informationimg img {
-    margin: 0;
-    padding: 0;
-    max-width: 20vw;
-    /* for at billedet ikke strækker sig for langt ud */
-    max-height: 20vh;
 }
 
 .left {
@@ -370,7 +360,7 @@ label {
 
 /* Here starts the styling for mobile version of the website */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /* Mainly coded for Iphone 6/7/8 */
 
     /* Styling for navigation bar*/
     
@@ -412,7 +402,6 @@ label {
         padding: 0;
     }
 
-
     /* Styling for Landing page */
 
     /* Top main */
@@ -439,13 +428,24 @@ label {
 
     /* About us */
 
+    #aboutus h2 {
+        font-size: 6vw;
+        padding: 5vh 0 0 0;
+    }
+
+    #aboutus p {
+        line-height: 3.5vh;
+        font-weight: normal;
+        margin-left: 2vw;
+    }
+
     /* Gallery and subscribe */
 
     #galleryandsubscribe h3 {
         font-size: 9vw;
     }
 
-    .container {
+    .tilmelding-container {
         display: unset;
     }
 
@@ -471,4 +471,29 @@ label {
         width: 100vw;
         margin: 5vh 0 5vh 0;
     }
+
+    /* Styling for Information page */
+
+    .infocontainer {
+        display: unset;
+    }
+
+    .left {
+        width: 100vw;
+    }
+
+    .infocontainer img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .informationarticle {
+        width: 100vw;
+    }
+
+    #info-main {
+        background: none;
+    }
+    
 }
