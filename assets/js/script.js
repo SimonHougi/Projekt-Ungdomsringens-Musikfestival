@@ -12,7 +12,7 @@ const postInfoId = 5;
 const InfoPost = 58;
 const tablePost = 69;
 const ForsidePost1 = 90;
-const galleryPost = 100;
+const galleryPost = 129;
 
 // parameter test neden for
 randompost = 58;
@@ -149,8 +149,27 @@ document.querySelector('.tilmelding-container').innerHTML = `
 }
 
 function renderGalleryWP(data){ 
-    document.querySelector('#').innerHTML = `
-
+    document.querySelector('#JSgalleri').innerHTML = `
+    <div class="flex-gallery">
+        <div class="gallery-img-box"><img src="${data.acf.img_1.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_2.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_3.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_4.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_5.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_6.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_7.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_8.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_9.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_10.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_11.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_12.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_13.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_14.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_15.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_16.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_17.url}" alt="billede"></div>
+        <div class="gallery-img-box"><img src="${data.acf.img_18.url}" alt="billede"></div>
+    </div>
 `;
 }
 
