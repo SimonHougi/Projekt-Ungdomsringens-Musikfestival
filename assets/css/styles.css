@@ -51,6 +51,10 @@ li a {
     border-radius: 30px;
 }
 
+li a i {
+    margin-right: 1.2vw;
+}
+
 .currentsite {
     color: #13849E;
 }
@@ -465,6 +469,7 @@ label {
     .fa-3x {
         margin-right: 5vw;
         padding-right: 0;
+        margin-left: 0;
     }
     footer p {
         padding: 0;
