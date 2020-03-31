@@ -62,8 +62,10 @@ p {
     margin-top: 2vh;
     font-weight: bold;
 }
+
 /* unikt ID for hver main på de forskellige html sider */
-main, #index-main{
+
+main, #index-main {
     background: url(images/landing.jpg);
     height: 100vh;
     background-position: center;
@@ -71,13 +73,12 @@ main, #index-main{
     background-size: cover;
 }
 
-main, #program-main{
+main, #program-main {
     background: url(images/programbackground.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 main, #info-main {
@@ -87,6 +88,7 @@ main, #info-main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #topmain {
     color: white;
     width: 100%;
@@ -104,31 +106,24 @@ main, #info-main {
 #program-main #program-section {
     color: white;
     width: 100%;
-    
     font-size: 3vw;
     margin-top: 7vh;
-    
-    
 }
 
 #program-main #program-section .program-flex {
     display: flex;
     flex-direction: row;
-    
 }
 
-#program-main #program-section .program-flex > .flex-box {
+#program-main #program-section .program-flex>.flex-box {
     background-color: #f1f1f1;
     margin: 0 0 0 5vw;
-
-    
     font-size: 30px;
-    
 }
+
 #program-main #program-section .program-flex .flex-box .filter {
     height: 65vh;
     width: 30vw;
-    
 }
 
 #program-main #program-section .program-flex .flex-box .table {
@@ -214,8 +209,7 @@ article {
 
 .container {
     display: grid;
-    grid-template-areas: 
-    'leftsect rightsect';
+    grid-template-areas: 'leftsect rightsect';
     margin-top: 10vh;
 }
 
@@ -247,17 +241,17 @@ footer {
     overflow-y: hidden;
 }
 
-footer > p {
+footer>p {
     display: inline-block;
     padding-left: 11vw;
 }
 
-footer > .footericons {
+footer>.footericons {
     display: inline-block;
     padding-left: 11vw;
 }
 
-.footericons > i {
+.footericons>i {
     padding-left: 2.5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -286,7 +280,6 @@ footer > .footericons {
 }
 
 .informationimg {
-    
     width: 20vw;
     height: 20vh;
     background-color: black;
@@ -297,7 +290,8 @@ footer > .footericons {
 .informationimg img {
     margin: 0;
     padding: 0;
-    max-width: 20vw; /* for at billedet ikke strækker sig for langt ud */
+    max-width: 20vw;
+    /* for at billedet ikke strækker sig for langt ud */
     max-height: 20vh;
 }
 
@@ -315,8 +309,7 @@ footer > .footericons {
 
 .infocontainer {
     display: grid;
-    grid-template-areas: 
-    'left left left mid mid mid right right right';
+    grid-template-areas: 'left left left mid mid mid right right right';
     margin-left: 11vw;
     margin-top: 3vh;
 }
@@ -373,4 +366,13 @@ label {
 
 .subcontent button {
     margin-left: 6.7vw;
+}
+
+/* Here starts the styling for mobile version of the website */
+
+@media only screen and (max-width: 768px) {
+    /* Styling for landing page*/
+    li {
+        background-color: black;
+    }
 }
