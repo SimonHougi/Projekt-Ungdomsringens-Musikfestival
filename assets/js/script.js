@@ -12,6 +12,7 @@ const postInfoId = 5;
 const InfoPost = 58;
 const tablePost = 69;
 const ForsidePost1 = 90;
+const galleryPost = 100;
 
 // parameter test neden for
 randompost = 58;
@@ -19,6 +20,7 @@ var TPtest = randompost;
 
 getDatPInfo(); //parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
 getDataForside();
+getDataGallery();
 
 function getDatPInfo(){
     const xhttp = new XMLHttpRequest();
@@ -26,13 +28,11 @@ function getDatPInfo(){
         if (this.readyState == 4 && this.status == 200){
             const data = JSON.parse(this.responseText);
             console.log(data);
-            
-                
+
           // console.log(data.date);
            // console.log(data.explanation);
             // fører koden videre til en function ved navn renderInfoWP
             renderInfoWP(data);
-           
         }
     }
     // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
@@ -53,6 +53,22 @@ function getDataForside(){
     }
     // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
     xhttp.open('GET', `${WPurl}posts/${ForsidePost1}`, true); // parameter skal være her! efter "posts/"
+    xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
+    xhttp.send();
+}
+
+function getDataGallery(){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+    
+            renderGalleryWP(data);
+        }
+    }
+    // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+    xhttp.open('GET', `${WPurl}posts/${galleryPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
 }
@@ -109,19 +125,32 @@ function renderForsideWP(data){ // billede
 
 `;
 document.querySelector('#aboutus').innerHTML = `
-    <div id="aboutus">
-        <h2>Ungdomsringen Præsenterer <br> - i samarbejde med NORDKRAFT <br> Undgomsringens Musikfestival 2020</h2>
+    
+        <h2>${data.acf.section_1_header}</h2>
         <div id="JScontent">
-            <section></section>
-            <aside></aside>
+            <section><p>${data.acf.section_1_text_area_1}<P></section>
+            <aside><p>${data.acf.section_1_text_area_2}<P></aside>
         </div>
-        <div id="JScontent">
-            <section></section>
-            <aside></aside>
-        </div>
-    </div>
+`;
+document.querySelector('.tilmelding-container').innerHTML = `
+<section class="infobox leftsection">
+    <h4>${data.acf.generel_header}</h4>
+    <article>${data.acf.generel_text_area}</article>
+    </section>
+    <section>
+    <button class="subbtn"><a href="tilmelding.html">Tilmeld</a></button>
+    <button class="infobtn"><a href="info.html">Mere info</a></button>
+    </section>
+    <section class="infobox rightsection">
+    <h4>${data.acf.regler_header}</h4>
+    <article>${data.acf.regler_text_area}</article>
+</section>
+`;
+}
+
+function renderGalleryWP(data){ 
+    document.querySelector('#').innerHTML = `
 
 `;
-
 }
 

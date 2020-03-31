@@ -207,7 +207,7 @@ article {
     margin-left: 15vw;
 }
 
-.container {
+.tilmelding-container {
     display: grid;
     grid-template-areas: 'leftsect rightsect';
     margin-top: 10vh;
