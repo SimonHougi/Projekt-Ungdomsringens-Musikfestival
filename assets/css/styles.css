@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-#spinner{
+#spinner {
     display: none;
     position: fixed;
     left: 0;
@@ -20,7 +20,7 @@ body {
     margin: auto;
 }
 
-.active{
+.active {
     display: block !important;
 }
 
@@ -180,17 +180,15 @@ h2 {
 
 /*Styling for Gallery and Subscribe section on the landing page */
 
-
 /* Gallery flex grid start */
 
 .flex-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-  }
-  
-  .gallery-img-box {
+}
+
+.gallery-img-box {
     background-color: #f1f1f1;
     width: 270px;
     height: 270px;
@@ -198,15 +196,15 @@ h2 {
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-  }
+}
 
-  .gallery-img-box img {
-    width:auto; 
-      height:100%; 
-      object-fit:cover; 
+.gallery-img-box img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
     max-width: 270px;
     max-height: 270px;
-  }
+}
 
 /* Gallery flex grid slut */
 
@@ -299,12 +297,6 @@ footer>.footericons {
     padding-left: 2.5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-}
-
-/* Styling for footer on program page */
-
-.programfooter {
-    margin-top: 5vh;
 }
 
 /*Styling for the content on information page */
@@ -409,16 +401,14 @@ label {
 
 /* Here starts the styling for mobile version of the website */
 
-@media only screen and (max-width: 768px) { /* Mainly coded for Iphone 6/7/8 */
-
+@media only screen and (max-width: 768px) {
+    /* Mainly coded for Iphone 6/7/8 */
     /* Styling for navigation bar*/
-    
     ul {
         margin: 0;
         padding: 0;
         background-color: black;
     }
-
     li a {
         background-color: black;
         border-radius: 0;
@@ -427,42 +417,31 @@ label {
         margin: 0;
         width: 28vw;
     }
-
     #logo {
         width: 13vw;
     }
-
     .hidden {
         display: none;
     }
-
     /* Styling for footer */
-
     footer {
         font-size: 4vw;
     }
-
     .fa-3x {
         margin-right: 5vw;
         padding-right: 0;
     }
-
     footer p {
         padding: 0;
     }
-
     /* Styling for Landing page */
-
     /* Top main */
-
     #topmain h1 {
         font-size: 8vw;
     }
-
     #topmain p {
         font-size: 6vw;
     }
-
     #topmain button {
         width: 30vw;
         height: 10vh;
@@ -470,44 +449,34 @@ label {
         font-weight: bold;
         padding: 0;
     }
-
     #icondown {
         font-size: 6vw;
     }
-
     /* About us */
-
     #aboutus h2 {
         font-size: 6vw;
         padding: 5vh 0 0 0;
     }
-
     #aboutus p {
         line-height: 3.5vh;
         font-weight: normal;
         margin-left: 2vw;
     }
-
     /* Gallery and subscribe */
-
     #galleryandsubscribe h3 {
         font-size: 9vw;
     }
-
     .tilmelding-container {
         display: unset;
     }
-
     .infobox {
         width: 80vw;
         height: 60vh;
         margin: 5vh 0 0 5vw;
     }
-
     .infobox h4 {
         font-size: 6vw;
     }
-
     .subbtn, .infobtn {
         position: inherit;
         width: 40vw;
@@ -515,64 +484,95 @@ label {
         margin: 5vh 0 0 5vw;
         font-size: 7vw;
     }
-
     .partnersimg {
         width: 100vw;
         margin: 5vh 0 5vh 0;
     }
-
     /* Styling for Information page */
-
     .infocontainer {
         display: unset;
     }
-
     .left, .mid, .right {
         width: 100vw;
         height: 100%;
     }
-
     .mid {
         display: table;
     }
-
     .mid .informationarticle {
         display: table-footer-group;
     }
-
     .mid img {
         display: table-header-group;
     }
-
     .infocontainer img {
         width: 100%;
         height: 100%;
     }
-
     .informationarticle {
         width: 100vw;
         height: 100%;
         background: black;
     }
-
-    .informationarticle p{
+    .informationarticle p {
         color: white;
         padding: 2vw;
         font-size: 4vw;
     }
-
     .informationarticle h1 {
         color: white;
         padding: 2vw;
         font-size: 6vw;
     }
-
     #info-main {
         background: none;
     }
-
     .info-gen {
         background: black;
     }
+    /* Styling for Program page */
 
+    #program-main #program-section .program-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Styling for Subscribe page */
+
+    .subcontent {
+        display: table;
+        margin: 0;
+    }
+
+    .subfomular {
+        display: table-header-group;
+    }
+
+    .poster {
+        display: table-footer-group;
+    }
+
+    .poster img {
+        width: 100vw;
+    }
+
+    input {
+        width: 90vw;
+        margin: 2vh 0 2vh 4vw;
+    }
+    
+    label {
+        margin-left: 4vw;
+    }
+
+    .subcontent h2 {
+        padding-top: 2vh;
+        font-size: 7vw;
+    }
+    
+    .subcontent button {
+        width: 40vw;
+        font-size: 5vw;
+        margin: 0 0 2vh 30vw;
+    }
 }
