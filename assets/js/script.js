@@ -45,7 +45,6 @@ function getDataWP(){
 //  xhttp.open('GET', `${WPurl}?api_key=${WPkey}`, true);
 function renderInfoWP(data){ // billede
     document.querySelector('.info-gen').innerHTML = `
-
                         <div class="infocontainer">
                         <div class="left">
                             <section class="informationimg">
@@ -57,7 +56,6 @@ function renderInfoWP(data){ // billede
                        </article>
                             </section>
                         </div>
-
                         <div class="mid">
                             <section class="informationarticle">
                                 <article><h1>${data.acf.info_header_mid}</h1>
@@ -67,7 +65,6 @@ function renderInfoWP(data){ // billede
                                 <img src="${data.acf.info_image_mid.url}" alt="">
                             </section>
                         </div>
-                        
                         <div class="right">
                             <section class="informationimg">
                                 <img src="${data.acf.info_image_right.url}" alt="">
