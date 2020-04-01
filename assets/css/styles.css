@@ -150,6 +150,25 @@ main, #info-main {
     width: 55vw;
 }
 
+.filter {
+    background-color: #d9cec8;
+}
+
+table {
+    width: 100%;
+    color: black;
+    font-size: 1vw;
+    background-color: #d9cec8;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    height: 5vh;
+    padding-left: 0.5vw;
+  }  
+
 /* Styling for buttons */
 
 button {
