@@ -33,15 +33,15 @@ function loadPage() {
    
     getDataForside(); // henter Forside SIDE DATA fra API (Wordpress)
     getDataGallery(); // henter Galleri DATA
-    getDatPInfo(); // henter INFO SIDE DATA
-    
+    getDataPInfo(); // henter INFO SIDE DATA
+    getDataProgram();
      // Note: parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
 }
 
 
 
 
-function getDatPInfo(){
+function getDataPInfo(){
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200){
@@ -92,6 +92,27 @@ function getDataGallery(){
     xhttp.open('GET', `${WPurl}posts/${galleryPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
+}
+
+function getDataProgram(){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+
+          // console.log(data.date);
+           // console.log(data.explanation);
+            // fører koden videre til en function ved navn renderInfoWP
+            renderProgramWP(data);
+        }
+    }
+    // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+    xhttp.open('GET', `${WPurl}posts/${tablePost}`, true); // parameter skal være her! efter "posts/"
+    xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
+    xhttp.send();
+    
+    
 }
 
 
@@ -197,3 +218,87 @@ function renderGalleryWP(data){
 
 }
 
+function renderProgramWP(data){ // billede
+    
+    document.querySelector('#table').innerHTML = `
+    <table>
+    <tr>
+        <th>FREDAG D. 17</th>
+        <th>Skråen</th>
+        <th>Royal Stage</th>
+        <th>Joule</th>
+        <th>Watt</th>
+        <th>Kulkælderen</th>
+        <th>Baghuset</th>
+    </tr>
+    <tr>
+        <td>19.00</td>
+        <td>Åbning-<br>Toto Jam</td>
+    </tr>
+    <tr>
+        <td>19.30</td>
+        <td>Toto Jam</td>
+        <td>Xenon</td>
+        <td>Funky Ducks</td>
+        <td>Pneumonia</td>
+    </tr>
+    <tr>
+        <td>20.00</td>
+        <td>Beo´svision</td>
+        <td>Dream on</td>
+        <td>Klejtrup<br>Musikefterskole</td>
+        <td>Mad Math feat<br>Karl Emil</td>
+    </tr>
+    <tr>
+        <td>20.30</td>
+        <td>Shhh</td>
+        <td>Don´t ask about<br>The bandname</td>
+        <td>Sonasonur</td>
+        <td>Egeskov /<br>Munkholm</td>
+    </tr>
+    <tr>
+        <td>21.00</td>
+        <td>Beatpunkz</td>
+        <td>Swartzheim</td>
+        <td>Ragnarock</td>
+        <td>Fiskejammer</td>
+    </tr>
+    <tr>
+        <td>21.30</td>
+        <td>BOAT</td>
+        <td>Rewind<br>(Hadsund)</td>
+        <td>KYSSS</td>
+        <td>The Leftovers</td>
+    </tr>
+    <tr>
+        <td>22.00</td>
+        <td>The Clique og<br>Frederikke og<br>Mathilde</td>
+        <td>Las Agredoras</td>
+        <td>Sweet Euphoria</td>
+        <td>Random</td>
+    </tr>
+    <tr>
+        <td>22.30</td>
+        <td>Musikstarter<br>Camp Roskilde</td>
+        <td>Global Darkness</td>
+        <td>Egotrip / QUE</td>
+        <td>Askestorm</td>
+    </tr>
+    <tr>
+        <td>23.00</td>
+        <td>Musikstarter<br>Camp Roskilde</td>
+        <td>Beyound The<br>Birds</td>
+        <td>Side Effect /<br>Esku</td>
+        <td>No Focus</td>
+    </tr>
+    <tr>
+        <td>23.30</td>
+        <td>Müsli</td>
+        <td>Rumble</td>
+        <td>Impact</td>
+        <td>WINE</td>
+    </tr>
+    </table>
+`;
+setSpinner(false);
+}
