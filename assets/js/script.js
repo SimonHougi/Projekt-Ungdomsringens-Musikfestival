@@ -13,6 +13,7 @@ const InfoPost = 58;
 const tablePost = 69;
 const ForsidePost1 = 90;
 const galleryPost = 129;
+const programPost = 316;
 
 const spinner = document.querySelector('#spinner') // henter Spinner fra html
 loadPage();
@@ -35,6 +36,7 @@ function loadPage() {
     getDataGallery(); // henter Galleri DATA
     getDataPInfo(); // henter INFO SIDE DATA
     getDataProgram();
+    getDataProgramInfo();
      // Note: parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
 }
 
@@ -109,6 +111,26 @@ function getDataProgram(){
     }
     // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
     xhttp.open('GET', `${WPurl}posts/${tablePost}`, true); // parameter skal være her! efter "posts/"
+    xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
+    xhttp.send();
+}
+
+
+function getDataProgramInfo(){
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if (this.readyState == 4 && this.status == 200){
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+
+          // console.log(data.date);
+           // console.log(data.explanation);
+            // fører koden videre til en function ved navn renderInfoWP
+            renderProgramInfoWP(data);
+        }
+    }
+    // xhttp.open('GET', `${WPurl}posts/?tags=${postInfoId}`, true);
+    xhttp.open('GET', `${WPurl}posts/${programPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
 }
@@ -423,4 +445,15 @@ function renderProgramWP(data){ // billede
                         </table>
 `;
 setSpinner(false);
+}
+
+
+function renderProgramInfoWP(data){ 
+    document.querySelector('#Program-JS').innerHTML = `
+    
+        <h4>${data.acf.info_header_left}</h4></br>
+        <p>${data.acf.info_text_left}</p>
+
+`;
+
 }
