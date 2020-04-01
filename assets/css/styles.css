@@ -135,7 +135,7 @@ main, #info-main {
     flex-direction: row;
 }
 
-#program-main #program-section .program-flex>.flex-box {
+#program-main #program-section .program-flex>.flex-box { /* > er den okay?*/
     background-color: #f1f1f1;
     margin: 0 0 0 5vw;
     font-size: 30px;

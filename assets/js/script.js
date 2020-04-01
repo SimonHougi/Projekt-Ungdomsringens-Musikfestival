@@ -231,7 +231,7 @@ function renderProgramWP(data){ // billede
                             </tr>
                             <tr>
                                 <td>19.00</td>
-                                <td>Åbning-<br>Toto Jam</td>
+                                <td>${data.acf.table_act_1}</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -240,82 +240,183 @@ function renderProgramWP(data){ // billede
                             </tr>
                             <tr>
                                 <td>19.30</td>
-                                <td>Toto Jam</td>
-                                <td>Xenon</td>
-                                <td>Funky Ducks</td>
-                                <td>Pneumonia</td>
+                                <td>${data.acf.table_act_1}</td>
+                                <td>${data.acf.table_act_2}</td>
+                                <td>${data.acf.table_act_3}</td>
+                                <td>${data.acf.table_act_4}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>20.00</td>
-                                <td>Beo´svision</td>
-                                <td>Dream on</td>
-                                <td>Klejtrup<br>Musikefterskole</td>
-                                <td>Mad Math feat<br>Karl Emil</td>
+                                <td>${data.acf.table_act_5}</td>
+                                <td>${data.acf.table_act_6}</td>
+                                <td>${data.acf.table_act_7}</td>
+                                <td>${data.acf.table_act_8}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>20.30</td>
-                                <td>Shhh</td>
-                                <td>Don´t ask about<br>The bandname</td>
-                                <td>Sonasonur</td>
-                                <td>Egeskov /<br>Munkholm</td>
+                                <td>${data.acf.table_act_9}</td>
+                                <td>${data.acf.table_act_10}</td>
+                                <td>${data.acf.table_act_11}</td>
+                                <td>${data.acf.table_act_12}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>21.00</td>
-                                <td>Beatpunkz</td>
-                                <td>Swartzheim</td>
-                                <td>Ragnarock</td>
-                                <td>Fiskejammer</td>
+                                <td>${data.acf.table_act_13}</td>
+                                <td>${data.acf.table_act_14}</td>
+                                <td>${data.acf.table_act_15}</td>
+                                <td>${data.acf.table_act_16}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>21.30</td>
-                                <td>BOAT</td>
-                                <td>Rewind<br>(Hadsund)</td>
-                                <td>KYSSS</td>
-                                <td>The Leftovers</td>
+                                <td>${data.acf.table_act_17}</td>
+                                <td>${data.acf.table_act_18}</td>
+                                <td>${data.acf.table_act_19}</td>
+                                <td>${data.acf.table_act_20}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>22.00</td>
-                                <td>The Clique og<br>Frederikke og<br>Mathilde</td>
-                                <td>Las Agredoras</td>
-                                <td>Sweet Euphoria</td>
-                                <td>Random</td>
+                                <td>${data.acf.table_act_21}</td>
+                                <td>${data.acf.table_act_22}</td>
+                                <td>${data.acf.table_act_23}</td>
+                                <td>${data.acf.table_act_24}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>22.30</td>
-                                <td>Musikstarter<br>Camp Roskilde</td>
-                                <td>Global Darkness</td>
-                                <td>Egotrip / QUE</td>
-                                <td>Askestorm</td>
+                                <td>${data.acf.table_act_25}</td>
+                                <td>${data.acf.table_act_26}</td>
+                                <td>${data.acf.table_act_27}</td>
+                                <td>${data.acf.table_act_28}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>23.00</td>
-                                <td>Musikstarter<br>Camp Roskilde</td>
-                                <td>Beyound The<br>Birds</td>
-                                <td>Side Effect /<br>Esku</td>
-                                <td>No Focus</td>
+                                <td>${data.acf.table_act_29}</td>
+                                <td>${data.acf.table_act_30}</td>
+                                <td>${data.acf.table_act_31}</td>
+                                <td>${data.acf.table_act_32}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>23.30</td>
-                                <td>Müsli</td>
-                                <td>Rumble</td>
-                                <td>Impact</td>
-                                <td>WINE</td>
+                                <td>${data.acf.table_act_33}</td>
+                                <td>${data.acf.table_act_34}</td>
+                                <td>${data.acf.table_act_35}</td>
+                                <td>${data.acf.table_act_36}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>FREDAG D. 17</th>
+                                <th>Skråen</th>
+                                <th>Royal Stage</th>
+                                <th>Joule</th>
+                                <th>Watt</th>
+                                <th>Kulkælderen</th>
+                                <th>Baghuset</th>
+                            </tr>
+                            <tr>
+                                <td>19.00</td>
+                                <td>${data.acf.table_act_1}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>19.30</td>
+                                <td>${data.acf.table_act_1}</td>
+                                <td>${data.acf.table_act_2}</td>
+                                <td>${data.acf.table_act_3}</td>
+                                <td>${data.acf.table_act_4}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>20.00</td>
+                                <td>${data.acf.table_act_5}</td>
+                                <td>${data.acf.table_act_6}</td>
+                                <td>${data.acf.table_act_7}</td>
+                                <td>${data.acf.table_act_8}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>20.30</td>
+                                <td>${data.acf.table_act_9}</td>
+                                <td>${data.acf.table_act_10}</td>
+                                <td>${data.acf.table_act_11}</td>
+                                <td>${data.acf.table_act_12}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>21.00</td>
+                                <td>${data.acf.table_act_13}</td>
+                                <td>${data.acf.table_act_14}</td>
+                                <td>${data.acf.table_act_15}</td>
+                                <td>${data.acf.table_act_16}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>21.30</td>
+                                <td>${data.acf.table_act_17}</td>
+                                <td>${data.acf.table_act_18}</td>
+                                <td>${data.acf.table_act_19}</td>
+                                <td>${data.acf.table_act_20}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>22.00</td>
+                                <td>${data.acf.table_act_21}</td>
+                                <td>${data.acf.table_act_22}</td>
+                                <td>${data.acf.table_act_23}</td>
+                                <td>${data.acf.table_act_24}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>22.30</td>
+                                <td>${data.acf.table_act_25}</td>
+                                <td>${data.acf.table_act_26}</td>
+                                <td>${data.acf.table_act_27}</td>
+                                <td>${data.acf.table_act_28}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>23.00</td>
+                                <td>${data.acf.table_act_29}</td>
+                                <td>${data.acf.table_act_30}</td>
+                                <td>${data.acf.table_act_31}</td>
+                                <td>${data.acf.table_act_32}</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>23.30</td>
+                                <td>${data.acf.table_act_33}</td>
+                                <td>${data.acf.table_act_34}</td>
+                                <td>${data.acf.table_act_35}</td>
+                                <td>${data.acf.table_act_36}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
