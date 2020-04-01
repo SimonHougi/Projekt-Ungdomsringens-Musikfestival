@@ -20,7 +20,6 @@ body {
     bottom: 0;
     margin: auto;
     height: 700px;
-    
 }
 
 .active {
@@ -456,6 +455,13 @@ label {
 
 @media only screen and (max-width: 768px) {
     /* Mainly coded for Iphone 6/7/8 */
+
+    /* Styling for the loading spinner */
+
+    #spinner {
+        height: 300px;
+    }
+
     /* Styling for navigation bar*/
     ul {
         margin: 0;
@@ -502,9 +508,11 @@ label {
         font-size: 5vw;
         font-weight: bold;
         padding: 0;
+        margin-left: 1.5vw;
     }
     #icondown {
         font-size: 6vw;
+        margin-left: 6.5vw;
     }
     /* About us */
     #aboutus h2 {
