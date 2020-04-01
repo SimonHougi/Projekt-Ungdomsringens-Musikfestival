@@ -150,15 +150,15 @@ main, #info-main {
     width: 55vw;
 }
 
-.filter {
+.table, .filter {
     background-color: #d9cec8;
+    height: 65vh;
 }
 
 table {
     width: 100%;
     color: black;
     font-size: 1vw;
-    background-color: #d9cec8;
     border-collapse: collapse;
 }
 
@@ -170,6 +170,10 @@ td, th {
   }  
 
   .programfooter {
+      margin-top: 5vh;
+  }
+
+  #saturday {
       margin-top: 5vh;
   }
 

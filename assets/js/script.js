@@ -219,7 +219,7 @@ function renderGalleryWP(data){
 function renderProgramWP(data){ // billede
     
     document.querySelector('#table').innerHTML = `
-                        <table>
+                        <table id="friday">
                             <tr>
                                 <th>FREDAG D. 17</th>
                                 <th>Skråen</th>
@@ -320,7 +320,7 @@ function renderProgramWP(data){ // billede
                                 <td></td>
                             </tr>
                         </table>
-                        <table>
+                        <table id="saturday">
                             <tr>
                                 <th>FREDAG D. 17</th>
                                 <th>Skråen</th>
