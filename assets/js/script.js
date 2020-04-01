@@ -137,7 +137,7 @@ function renderForsideWP(data){ // billede
     <section>
         <h1>${data.acf.hero_header}</h1>
         <p>${data.acf.hero_date}</p>
-        <button><a href="#tilmelding">Tilmelding</a></button>
+        <button id="landingbutton"><a href="#tilmelding">Tilmelding</a></button>
     </section>
     <section id="icondown">
         <i class="fa fa-arrow-down fa-3x"></i>

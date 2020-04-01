@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -158,6 +159,10 @@ button {
     border: 2px solid #B73D3D;
     background-color: black;
     color: #B73D3D;
+}
+
+#landingbutton {
+    margin-left: 1vw;
 }
 
 a {
@@ -336,7 +341,7 @@ footer>.footericons {
 }
 
 footer section, p, i {
-    margin-left: 1vw;
+    margin-left: 1.15vw;
 }
 
 /*Styling for the content on information page */
@@ -344,19 +349,21 @@ footer section, p, i {
 .informationarticle {
     width: 25vw;
     height: 37vh;
-    background-color: white;
+    background-color: rgb(37, 37, 37);
     margin: 0;
     padding: 0;
+    border: 1px solid #B73D3D;
 }
 
 .informationarticle article {
     margin: 0;
     padding: 0.5vw;
-    color: black;
+    color: white;
 }
 
 .informationarticle p {
     font-size: 0.8vw;
+    margin: 0;
 }
 
 .infocontainer img {
@@ -556,6 +563,7 @@ label {
         width: 100vw;
         height: 100%;
         background: black;
+        border: none;
     }
     .informationarticle p {
         color: white;
