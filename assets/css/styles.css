@@ -169,6 +169,10 @@ td, th {
     padding-left: 0.5vw;
   }  
 
+  .programfooter {
+      margin-top: 5vh;
+  }
+
 /* Styling for buttons */
 
 button {
@@ -619,6 +623,20 @@ label {
         display: flex;
         flex-direction: column;
     }
+
+    #program-main #program-section .program-flex>.flex-box {
+        margin: 0;
+    }
+
+    .filter {
+        width: 100vw;
+    }
+
+    table {
+        width: 100vw;
+        font-size: 2.2vw;
+    }
+
     /* Styling for Subscribe page */
     .subcontent {
         display: table;
