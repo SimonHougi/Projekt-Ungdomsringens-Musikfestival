@@ -322,7 +322,7 @@ function renderProgramWP(data){ // billede
                         </table>
                         <table id="saturday">
                             <tr>
-                                <th>FREDAG D. 17</th>
+                                <th>${data.acf.table2_header}</th>
                                 <th>Skråen</th>
                                 <th>Royal Stage</th>
                                 <th>Joule</th>
@@ -332,93 +332,93 @@ function renderProgramWP(data){ // billede
                             </tr>
                             <tr>
                                 <td>19.00</td>
-                                <td>${data.acf.table_act_1}</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>${data.acf.tableto_act_1}</td>
+                                <td>${data.acf.tableto_act_2}</td>
+                                <td>${data.acf.tableto_act_3}</td>
+                                <td>${data.acf.tableto_act_4}</td>
+                                <td>${data.acf.tableto_act_5}</td>
+                                <td>${data.acf.tableto_act_6}</td>
                             </tr>
                             <tr>
                                 <td>19.30</td>
-                                <td>${data.acf.table_act_1}</td>
-                                <td>${data.acf.table_act_2}</td>
-                                <td>${data.acf.table_act_3}</td>
-                                <td>${data.acf.table_act_4}</td>
+                                <td>${data.acf.tableto_act_1}</td>
+                                <td>${data.acf.tableto_act_8}</td>
+                                <td>${data.acf.tableto_act_9}</td>
+                                <td>${data.acf.tableto_act_10}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>20.00</td>
-                                <td>${data.acf.table_act_5}</td>
-                                <td>${data.acf.table_act_6}</td>
-                                <td>${data.acf.table_act_7}</td>
-                                <td>${data.acf.table_act_8}</td>
+                                <td>${data.acf.tableto_act_11}</td>
+                                <td>${data.acf.tableto_act_12}</td>
+                                <td>${data.acf.tableto_act_13}</td>
+                                <td>${data.acf.tableto_act_14}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>20.30</td>
-                                <td>${data.acf.table_act_9}</td>
-                                <td>${data.acf.table_act_10}</td>
-                                <td>${data.acf.table_act_11}</td>
-                                <td>${data.acf.table_act_12}</td>
+                                <td>${data.acf.tableto_act_7}</td>
+                                <td>${data.acf.tableto_act_15}</td>
+                                <td>${data.acf.tableto_act_16}</td>
+                                <td>${data.acf.tableto_act_17}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>21.00</td>
-                                <td>${data.acf.table_act_13}</td>
-                                <td>${data.acf.table_act_14}</td>
-                                <td>${data.acf.table_act_15}</td>
-                                <td>${data.acf.table_act_16}</td>
+                                <td></td>
+                                <td></td>
+                                <td>${data.acf.tableto_act_15}</td>
+                                <td>${data.acf.tableto_act_16}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>21.30</td>
-                                <td>${data.acf.table_act_17}</td>
-                                <td>${data.acf.table_act_18}</td>
-                                <td>${data.acf.table_act_19}</td>
-                                <td>${data.acf.table_act_20}</td>
+                                <td>${data.acf.tableto_act_17}</td>
+                                <td>${data.acf.tableto_act_18}</td>
+                                <td>${data.acf.tableto_act_19}</td>
+                                <td>${data.acf.tableto_act_20}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>22.00</td>
-                                <td>${data.acf.table_act_21}</td>
-                                <td>${data.acf.table_act_22}</td>
-                                <td>${data.acf.table_act_23}</td>
-                                <td>${data.acf.table_act_24}</td>
+                                <td>${data.acf.tableto_act_21}</td>
+                                <td>${data.acf.tableto_act_22}</td>
+                                <td>${data.acf.tableto_act_23}</td>
+                                <td>${data.acf.tableto_act_24}</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>22.30</td>
-                                <td>${data.acf.table_act_25}</td>
-                                <td>${data.acf.table_act_26}</td>
-                                <td>${data.acf.table_act_27}</td>
-                                <td>${data.acf.table_act_28}</td>
+                                <td>${data.acf.tableto_act_25}</td>
+                                <td>${data.acf.tableto_act_26}</td>
                                 <td></td>
+                                <td>${data.acf.tableto_act_28}</td>
                                 <td></td>
+                                <td>${data.acf.tableto_act_27}</td>
                             </tr>
                             <tr>
                                 <td>23.00</td>
-                                <td>${data.acf.table_act_29}</td>
-                                <td>${data.acf.table_act_30}</td>
-                                <td>${data.acf.table_act_31}</td>
-                                <td>${data.acf.table_act_32}</td>
+                                <td>${data.acf.tableto_act_29}</td>
+                                <td>${data.acf.tableto_act_30}</td>
                                 <td></td>
+                                <td>${data.acf.tableto_act_32}</td>
+                                <td>${data.acf.tableto_act_31}</td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td>23.30</td>
-                                <td>${data.acf.table_act_33}</td>
-                                <td>${data.acf.table_act_34}</td>
-                                <td>${data.acf.table_act_35}</td>
-                                <td>${data.acf.table_act_36}</td>
-                                <td></td>
-                                <td></td>
+                                <td>${data.acf.tableto_act_29}</td>
+                                <td>${data.acf.tableto_act_34}</td>
+                                <td>${data.acf.tableto_act_35}</td>
+                                <td>${data.acf.tableto_act_36}</td>
+                                <td>${data.acf.tableto_act_31}</td>
+                                <td>${data.acf.tableto_act_33}</td>
                             </tr>
                         </table>
 `;
