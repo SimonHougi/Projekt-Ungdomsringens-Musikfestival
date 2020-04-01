@@ -140,14 +140,18 @@ main, #info-main {
 }
 
 #program-main #program-section .program-flex>.flex-box { /* > er den okay?*/
-    background-color: #f1f1f1;
+    background-color: rgb(37, 37, 37);
     margin: 0 0 0 5vw;
     font-size: 30px;
+    border: 1px solid #B73D3D;
 }
 
 #program-main #program-section .program-flex .flex-box .filter {
     height: 65vh;
     width: 30vw;
+}
+#program-main #program-section .program-flex .flex-box .program-text {
+   font-size: 0.8vw;
 }
 
 #program-main #program-section .program-flex .flex-box .table {
