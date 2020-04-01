@@ -26,6 +26,10 @@ body {
     display: block !important;
 }
 
+span {
+    color: #B73D3D;
+}
+
 /* Styling for navigation bar for all sites*/
 
 ul {
