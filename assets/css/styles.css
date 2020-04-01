@@ -356,6 +356,11 @@ footer section, p, i {
     border: 1px solid #B73D3D;
 }
 
+.scrollbar {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 .informationarticle article {
     margin: 0;
     padding: 0.5vw;

@@ -123,7 +123,7 @@ function renderInfoWP(data){ // billede
                             
                                 <img src="${data.acf.info_image_right.url}" alt="">
                             
-                            <section class="informationarticle">
+                            <section class="informationarticle scrollbar">
                                 <article><h1>${data.acf.info_header_right}</h1>
                                 <p>${data.acf.info_text_right}</p></article>
                             </section>
@@ -162,7 +162,7 @@ document.querySelector('.tilmelding-container').innerHTML = `
     <button class="subbtn"><a href="tilmelding.html">Tilmeld</a></button>
     <button class="infobtn"><a href="info.html">Mere info</a></button>
     </section>
-    <section class="infobox rightsection">
+    <section class="infobox rightsection scrollbar">
     <h4>${data.acf.regler_header}</h4>
     <article>${data.acf.regler_text_area}</article>
 </section>
