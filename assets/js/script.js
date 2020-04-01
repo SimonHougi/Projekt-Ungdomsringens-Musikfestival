@@ -57,7 +57,7 @@ function getDatPInfo(){
     xhttp.open('GET', `${WPurl}posts/${InfoPost}`, true); // parameter skal være her! efter "posts/"
     xhttp.setRequestHeader('Authorization', `bearer ${WPkey}`);
     xhttp.send();
-
+    
     
 }
 
@@ -97,6 +97,7 @@ function getDataGallery(){
 
 //  xhttp.open('GET', `${WPurl}?api_key=${WPkey}`, true);
 function renderInfoWP(data){ // billede
+    
     document.querySelector('.info-gen').innerHTML = `
                         <div class="infocontainer">
                         <div class="left">
@@ -192,5 +193,6 @@ function renderGalleryWP(data){
         <div class="gallery-img-box hidden"><img src="${data.acf.img_18.url}" alt="billede"></div>
     </div>
 `;
+
 }
 
