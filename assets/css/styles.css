@@ -176,6 +176,10 @@ td, th {
       margin-top: 5vh;
   }
 
+  .hiddenimg {
+      display: none;
+  }
+
 /* Styling for buttons */
 
 button {
@@ -622,22 +626,19 @@ label {
         background: black;
     }
     /* Styling for Program page */
-    #program-main #program-section .program-flex {
-        display: flex;
-        flex-direction: column;
+    
+    .hiddenimg {
+        display: unset;
+        width: 100vw;
+        margin: 5vh 0 0 0;
     }
 
-    #program-main #program-section .program-flex>.flex-box {
+    .programhtml {
+        background-color: black;
+    }
+
+    .programfooter {
         margin: 0;
-    }
-
-    .filter {
-        width: 100vw;
-    }
-
-    table {
-        width: 100vw;
-        font-size: 2.2vw;
     }
 
     /* Styling for Subscribe page */

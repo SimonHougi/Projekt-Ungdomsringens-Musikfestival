@@ -158,7 +158,7 @@ function renderForsideWP(data){ // billede
     <section>
         <h1>${data.acf.hero_header}</h1>
         <p>${data.acf.hero_date}</p>
-        <button id="landingbutton"><a href="#tilmelding">Tilmelding</a></button>
+        <a href="#tilmelding"><button id="landingbutton">Tilmelding</button></a>
     </section>
     <section id="icondown">
         <i class="fa fa-arrow-down fa-3x"></i>
@@ -179,8 +179,8 @@ document.querySelector('.tilmelding-container').innerHTML = `
     <article>${data.acf.generel_text_area}</article>
     </section>
     <section>
-    <button class="subbtn"><a href="tilmelding.html">Tilmeld</a></button>
-    <button class="infobtn"><a href="info.html">Mere info</a></button>
+    <a href="tilmelding.html"><button class="subbtn">Tilmeld</button></a>
+    <a href="info.html"><button class="infobtn">Mere info</button></a>
     </section>
     <section class="infobox rightsection scrollbar">
     <h4>${data.acf.regler_header}</h4>
