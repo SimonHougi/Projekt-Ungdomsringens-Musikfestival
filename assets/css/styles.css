@@ -526,13 +526,17 @@ label {
     footer {
         font-size: 4vw;
     }
-    .fa-3x {
-        margin-right: 5vw;
-        padding-right: 0;
-        margin-left: 0;
+    
+    .footericons {
+        padding: 0;
+        position: relative;
+        right: 15vw;
     }
+
     footer p {
         padding: 0;
+        position: relative;
+        right: 17vw;
     }
     /* Styling for Landing page */
     /* Top main */
@@ -564,7 +568,6 @@ label {
     #aboutus {
         height: 30vh;
     }
-
     
     /* Gallery and subscribe */
     #galleryandsubscribe h3 {
@@ -649,6 +652,10 @@ label {
 
     .programfooter {
         margin: 0;
+    }
+    
+    #program-main #program-section .program-flex {
+        height: 0;
     }
 
     /* Styling for Subscribe page */
