@@ -34,6 +34,7 @@ function loadPage() {
     getDataForside(); // henter Forside SIDE DATA fra API (Wordpress)
     getDataGallery(); // henter Galleri DATA
     getDatPInfo(); // henter INFO SIDE DATA
+    
      // Note: parameter der kan skifte posts ud efter en cycle? postene skal nok være i et array som looper?
 }
 
