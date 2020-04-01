@@ -152,8 +152,19 @@ main, #info-main {
     width: 30vw;
 }
 #program-main #program-section .program-flex .flex-box .program-text {
-   font-size: 0.8vw;
+   font-size: 1rem;
 }
+
+#program-main #program-section .program-flex .flex-box .program-text h4 {
+    margin: 1.5vh 0 0 0;
+
+ }
+
+#program-main #program-section .program-flex .flex-box .program-text p {
+    margin: 0 1.5vw 1.5vw 1.5vw;
+
+ }
+
 
 #program-main #program-section .program-flex .flex-box .table {
     width: 55vw;
